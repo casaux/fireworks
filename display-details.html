@@ -55,56 +55,89 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="index.html">myCASA</a></li>
-                     <li>Fireworks notification</li>
+                     <li>Notification of a firework display</li>
                   </ul>
                </nav>
+			 <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Fireworks notification</h1>
+                  <h1 class="break desktop au-header-heading">Notification of a firework display</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
                </header>
-			   
-				<div class="au-callout">
-                  <div class="row">
-                     <div class="col-xs-12 col-lg-9">
-                        <p>Persons or organisations who wish to conduct firework activities should notifty CASA at least 2 working days prior to the conduct of such activities in the following circumstances:</p>
-							<ul>
-                                <li><p>at a place within 5 nautical miles of an aerodrome (including an airfield or helipad). You must notify CASA if your firework activities are within 3 nautical miles, but we recommend notifying CASA within 5 nautical miles so we can ensure the appropriate airspace awareness to any air operations</p></li>
-                                <li><p>if using projectiles capable of reaching more than 400 feet above ground level</p></li>
-							</ul>
-						
-						 <br />
-                      	<a class="au-btn" href="details-of-display.html">Begin</a>
+			 </div>
 
-						 
-						 
-                     </div>
-                  </div>
-               </div>
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+				
+<h2>Display details</h2>
+					
+					 <div class="au-form-group casa-inline-form-group"> 
+                       <fieldset class="au-fieldset">
+                            <legend class="au-fieldset__legend">
+                                <h3 class="au-display-sm">Date of display</h3>
+                                <span class="au-hint-text">For example, 31 01 2020</span>
+                            </legend>
+                            <div class="au-form-group casa-inline-form-subgroup">  
+                                <label class="au-label" for="dd">Date</label>
+                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">  
+                                <label class="au-label" for="mm">Month</label>
+                                <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">  
+                                <label class="au-label" for="yyyy">Year</label>
+                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
+                           </div>
 
-<br>
+
+                        </fieldset>
+                    </div>
+					
 
 
-<br/>
+			<div class="au-form-group">
+                        <label class="au-label" for="name">Start time</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="start-time"/>
+          	</div>
+					
+			<div class="au-form-group">
+                        <label class="au-label" for="name">Duration</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="duration"/>
+          	</div>
+					
+					
+
+					
 
 
-<br><br>
-			 
-			 				
+					  
+
+
+				   
+				<div class="au-form-group">
+
+				<a class="au-btn" href="characteristics-of-display.html">Next</a>
+					
+
+
+
 
 					
 
 				</div>
-				   
-				   
-            </div>
-   
-				   
-				   
+				               <hr />
+            <a href="arn-saved.html" class="au-btn au-btn--secondary">
+            Save and exit application
+            </a>  
 				   
             </div>
-         </div>
+			 </div>
+			 </div>
+		  </div>
+
+
           <div class="footer">
            
             <div class="footer-wrapper">
@@ -112,5 +145,17 @@
             </div>
          </div>
       </main>
+	   		  <script>
+		  $("input[name=assessed-simulator]").on("change", function () {
+        if ($(this).val() === "aircraft") {
+            $(".vh-mark").removeClass("casa-hidden");
+            $(".simulator").addClass("casa-hidden");
+        } else if ($(this).val() === "simulator") {
+            $(".vh-mark").addClass("casa-hidden");
+            $(".simulator").removeClass("casa-hidden");
+        }
+    });
+
+		  </script>	 
    </body>
 </html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script> 
+      <script type="text/javascript">
+         /* page specific js */
+         
+         
+      </script>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+                  
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+                  
+                  
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="index.html">myCASA</a></li>
+                     <li>Notification of a firework display</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Notification of a firework display</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+				
+<h2>Pyrotechnical effects for display</h2>
+					
+
+				
+
+	
+			<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Total number of fireworks</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="fireworks"/>
+          	</div>
+					
+								<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Height of launch point in feet or metres around the surrounding terrain</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="launch-point"/>
+          	</div>
+					
+								<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Diameter in feet or metres of the largest aerial shells</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="shells"/>
+          	</div>
+					
+								<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Burst height in feet or metres</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="burst-height"/>
+          	</div>
+					
+													<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Burst radius in feet or metres</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="burst-radius"/>
+          	</div>
+					
+																	<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Maximum height in feet or metres above surrounding terrain of any
+firework</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="terrain"/>
+          	</div>
+					
+
+					
+
+
+					  
+
+
+				   
+				<div class="au-form-group">
+
+				<a class="au-btn" href="firework-notification-summary.html">Next</a>
+					
+
+
+
+
+					
+
+				</div>
+				               <hr />
+            <a href="arn-saved.html" class="au-btn au-btn--secondary">
+            Save and exit application
+            </a>  
+				   
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+           
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+	   		  <script>
+		  $("input[name=checkbox-ex]").on("click", function () {
+        if ($(this).val() === "aerials") {
+            $(".aerials-info").removeClass("casa-hidden");
+        }
+    });
+
+                  
+                  
+		  </script>	 
+   </body>
+</html>

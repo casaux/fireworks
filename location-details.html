@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<!-- saved from url=(0058)https://casaux.github.io/fireworks/details-of-display.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      
+<!doctype html>
+<html>
+   <head>
       <meta charset="utf-8">
-      <title>myCASA - Please select a profile</title>
+      <title>myCASA</title>
       <meta name="viewport" content="width=device-width">
       <meta name="viewport" content="initial-scale=1">
       <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
@@ -11,10 +10,10 @@
       <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script> 
       <script type="text/javascript">
          /* page specific js */
-         
-         $(document).on('submit','#fireworks',function(){
+        $(document).on('submit','#fireworks',function(){
             
              if( $("#name").val().toLowerCase() != "mandurah lake"){
                    $("#mandurah2").css("display","none");
@@ -39,11 +38,10 @@
              
              
         
-         });
-          
-          
+         }); 
+         
       </script>
-      <style>
+	         <style>
          .map-container {
             width: 800px;
             height: 500px;
@@ -126,17 +124,17 @@
             <div class="container">
                <div class="row">
                   <div class="logo au-body au-body--dark">
-                     <a href="https://casaux.github.io/fireworks/index.html"><img src="./myCASA_files/CASALOGO-white-i.svg"></a>
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
                   
                   	<div id="dropdown-menu">
-						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="https://casaux.github.io/fireworks/details-of-display.html#"><img src="./myCASA_files/menu.png" height="20">Menu</a></div>
-						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="https://casaux.github.io/fireworks/details-of-display.html#"><img src="./myCASA_files/close.png" height="20">Close</a><br>
-						<br>
-						<p id="mycasa-home"><a href="https://casaux.github.io/fireworks/details-of-display.html#">myCASA home</a></p>
-						<p><a href="https://casaux.github.io/fireworks/details-of-display.html#">Switch profile</a></p>
-						<p><a href="https://casaux.github.io/fireworks/mycasa-signed-out.html">Sign out</a></p>
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
                   
                   
@@ -146,10 +144,10 @@
          </div>
          <div class="body">
 			<div class="banner">
-				<div class="container">
+				<div class=container>
 					<div class="row">
 					 <div class="col-md-12">
-				This service is currently in beta, we encourage you to <a href="https://casaux.github.io/fireworks/feedback.html">provide feedback</a>
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
 				</div>
 				</div>
 			</div>
@@ -157,12 +155,12 @@
          <div class="container">
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
-                     <li><a href="https://casaux.github.io/fireworks/index.html">myCASA</a></li>
-                     <li>Flight review notification</li>
+                     <li><a href="index.html">myCASA</a></li>
+                     <li>Notification of a firework display</li>
                   </ul>
                </nav>
-             
-             <div class="au-body au-page-alerts au-page-alerts--info" id="mandurah1" style="display:none;">
+			 
+			              <div class="au-body au-page-alerts au-page-alerts--info" id="mandurah1" style="display:none;">
   <h3>This location does not require a notification</h3>
   <p>Your fireworks display location is less than 5.5km (three nautical miles) from an aerodrome (including an airfield or helipad) and is not using projectiles capable of reaching more than 400 feet above ground level.</p>
                  
@@ -174,45 +172,28 @@
   <p>Your fireworks display location is within 5.5km (three nautical miles) from an aerodrome (including an airfield or helipad) or is using projectiles capable of reaching more than 400 feet above ground level.</p>
                  
 </div>
-             
-             
+			 
+			 
 			 <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Fireworks notification</h1>
+                  <h1 class="break desktop au-header-heading">Notification of a firework display</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
                </header>
 			 </div>
 
-             
-             
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
 				
-<h2>Details of display</h2>
-
-                    <form id="fireworks" action="https://casaux.github.io/fireworks/details-of-display.html#" method="#">
+<h2>Notification details</h2>
+					
+							<div class="au-form-group">
+                        <label class="au-label" for="characteristics">Number of projectiles capable of reaching more
+than 400 feet above ground level</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="projectiles"/>
+          	</div>
                     
-                        
-            <div class="au-form-group">
-                        <label class="au-label" for="name">Are any projectiles capable of reaching more than 400 feet above ground level?</label>
-
-                        <div class="au-control-input au-control-input--block">
-                          <input class="au-control-input__input" type="radio" name="radio-ex" id="radio-phone" checked="">
-                          <label class="au-control-input__text" for="radio-phone">No</label>
-                        </div>
-                      
-                        <div class="au-control-input au-control-input--block">
-                          <input class="au-control-input__input" type="radio" name="radio-ex" id="radio-tablet">
-                          <label class="au-control-input__text" for="radio-tablet">Yes</label>
-                        </div>
-                        
-                        
-                        
-                        
-            </div>
-
             <div class="au-form-group">
                   <div id="pac-container">
                      <label>Enter your address or click on the map below</label>
@@ -228,31 +209,38 @@
                         <span id="place-address"></span>
                       </div>
             </div>
-                   
-			   <!-- <div class="au-form-group">
-                        <label class="au-label" for="name">Location or address of display</label>
-                        <input type="text" class="au-text-input au-text-input--block" id="name" autocomplete="off">
-          	</div> -->
 					
-            <div class="au-form-group" id="map1" style="display:none;">
-                    <iframe src="./myCASA_files/map.html" width="900" height="400"></iframe>
+					            <div class="au-form-group" id="map1" style="display:none;">
+                    <iframe src="../fireworks/myCASA_files/map.html" width="900" height="400"></iframe>
             </div>
                     
             <div class="au-form-group" id="map2" style="display:none;">
-                    <iframe src="./myCASA_files/map(1).html" width="900" height="400"></iframe>
+                    <iframe src="../fireworks/myCASA_files/map(1).html" width="900" height="400"></iframe>
             </div>
-                    
+					
+
+					
+
+
+					  
+
+
 				   
 				<div class="au-form-group">
 
-				<submit class="au-btn">Next
+				<a class="au-btn" href="firework-notification-details.html">Next</a>
 					
 
 
 
- 
+
 					
-                    </submit></div></form>
+
+				</div>
+				               <hr />
+            <a href="arn-saved.html" class="au-btn au-btn--secondary">
+            Save and exit application
+            </a>  
 				   
             </div>
 			 </div>
@@ -263,11 +251,10 @@
           <div class="footer">
            
             <div class="footer-wrapper">
-               <iframe src="./myCASA_files/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
             </div>
          </div>
       </main>
-
       <script>
             // This example requires the Places library. Include the libraries=places
             // parameter when you first load the API. For example:
@@ -408,5 +395,5 @@
        </script>
 
       <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places&sensor=false"></script> -->
-   
-</body></html>
+   </body>
+</html>
