@@ -10,11 +10,11 @@
       <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
-	  <script type="text/javascript" src="va.js"></script> 
+	  <script type="text/javascript" src="va.js"></script>
       <script type="text/javascript">
          /* page specific js */
-         
-         
+
+
       </script>
    </head>
    <body class="live-demo au-body au-grid">
@@ -26,7 +26,7 @@
                      <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
-                  
+
                   	<div id="dropdown-menu">
 						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
 						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
@@ -35,8 +35,8 @@
 						<p><a href="#">Switch profile</a></p>
 						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
-                  
-                  
+
+
                   </div>
                </div></div>
             </div>
@@ -69,24 +69,28 @@
 
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
-				
+
 <h2>Display details</h2>
-					
-					 <div class="au-form-group casa-inline-form-group"> 
+
+<div class="au-callout">
+<p>Please enter the start time and duration for the entire display below. If there are multiple displays, please describe additional start times and other details in the additional display information section below.</p>
+</div>
+
+					 <div class="au-form-group casa-inline-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
                                 <h3 class="au-display-sm">Date of display</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
-                            <div class="au-form-group casa-inline-form-subgroup">  
+                            <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="dd">Date</label>
                                 <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
                            </div>
-                           <div class="au-form-group casa-inline-form-subgroup">  
-                                <label class="au-label" for="mm">Month</label>
-                                <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="MM">Month</label>
+                                <input type="text" class="au-text-input" id="MM" placeholder="MM"/>
                            </div>
-                           <div class="au-form-group casa-inline-form-subgroup">  
+                           <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="yyyy">Year</label>
                                 <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
                            </div>
@@ -94,44 +98,81 @@
 
                         </fieldset>
                     </div>
-					
+
 
 
 			<div class="au-form-group">
-                        <label class="au-label" for="name">Start time</label>
-                        <input type="text" class="au-text-input au-text-input--block" id="start-time"/>
+        <fieldset class="au-fieldset">
+        <legend class="au-fieldset__legend">
+            <h3 class="au-display-sm">Start time of display</h3>
+            <span class="au-hint-text">For example, 19:00 or 07:00</span>
+        </legend>
+
+
+                          <div class="au-form-group casa-inline-form-subgroup">
+                               <label class="au-label" for="hh">Hour</label>
+                               <input type="text" class="au-text-input" id="hh" placeholder="HH"/>
+                          </div>
+                          <div class="au-form-group casa-inline-form-subgroup">
+                               <label class="au-label" for="mm">Minutes</label>
+                               <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
+                          </div>
+                        </fieldset>
           	</div>
-					
-			<div class="au-form-group">
-                        <label class="au-label" for="name">Duration</label>
-                        <input type="text" class="au-text-input au-text-input--block" id="duration"/>
+
+			         <div class="au-form-group">
+
+
+
+                 <fieldset class="au-fieldset">
+                 <legend class="au-fieldset__legend">
+                     <h3 class="au-display-sm">Total duration of display</h3>
+                     <span class="au-hint-text">For example, 25 or 90 minutes</span>
+                 </legend>
+
+
+
+                   <div class="au-form-group casa-inline-form-subgroup">
+                        <label class="au-label" for="mmm">Minutes</label>
+                        <input type="text" class="au-text-input" id="mmm" placeholder="MM"/>
+                   </div>
+
+
+                    </fieldset>
           	</div>
-					
-					
-
-					
 
 
-					  
+
+            <div class="au-form-group">
+                        <label class="au-label" for="additional">Additional display information (optional)</label>
+                          <span class="au-hint-text">Please provide any additional display information if required. This may include details of multiple displays or other important information regarding the display.</span>
+                        <textarea class="au-text-input au-text-input--block" id="additional"></textarea>
+          	</div>
 
 
-				   
+
+
+
+
+
+
+
 				<div class="au-form-group">
 
 				<a class="au-btn" href="characteristics-of-display.html">Next</a>
-					
 
 
 
 
-					
+
+
 
 				</div>
 				               <hr />
             <a href="arn-saved.html" class="au-btn au-btn--secondary">
             Save and exit application
-            </a>  
-				   
+            </a>
+
             </div>
 			 </div>
 			 </div>
@@ -139,7 +180,7 @@
 
 
           <div class="footer">
-           
+
             <div class="footer-wrapper">
                <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
             </div>
@@ -156,6 +197,6 @@
         }
     });
 
-		  </script>	 
+		  </script>
    </body>
 </html>

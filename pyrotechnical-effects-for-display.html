@@ -10,11 +10,11 @@
       <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
-	  <script type="text/javascript" src="va.js"></script> 
+	  <script type="text/javascript" src="va.js"></script>
       <script type="text/javascript">
          /* page specific js */
-         
-         
+
+
       </script>
    </head>
    <body class="live-demo au-body au-grid">
@@ -26,7 +26,7 @@
                      <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
-                  
+
                   	<div id="dropdown-menu">
 						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
 						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
@@ -35,8 +35,8 @@
 						<p><a href="#">Switch profile</a></p>
 						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
-                  
-                  
+
+
                   </div>
                </div></div>
             </div>
@@ -69,68 +69,147 @@
 
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
-				
+
 <h2>Pyrotechnical effects for display</h2>
-					
 
-				
 
-	
+
+
+
 			<div class="au-form-group">
-                        <label class="au-label" for="characteristics">Total number of fireworks</label>
-                        <input type="text" class="au-text-input au-text-input--block" id="fireworks"/>
+                        <label class="au-label" for="characteristics">Total quantity of fireworks</label>
+                        <input type="text" class="au-text-input  au-text-input--block" id="fireworks"/>
           	</div>
-					
-								<div class="au-form-group">
-                        <label class="au-label" for="characteristics">Height of launch point in feet or metres around the surrounding terrain</label>
-                        <input type="text" class="au-text-input au-text-input--block" id="launch-point"/>
-          	</div>
-					
-								<div class="au-form-group">
-                        <label class="au-label" for="characteristics">Diameter in feet or metres of the largest aerial shells</label>
+
+
+            <div class="au-form-group">
+
+                <div class="au-form-group casa-inline-form-subgroup casa-inline-form-subgroup-lg">
+                        <label class="au-label" for="characteristics">Height of launch point around the surrounding terrain</label>
                         <input type="text" class="au-text-input au-text-input--block" id="shells"/>
-          	</div>
-					
-								<div class="au-form-group">
-                        <label class="au-label" for="characteristics">Burst height in feet or metres</label>
+                      </div>
+
+
+                        <div class="au-form-group casa-inline-form-subgroup">
+
+                          <label for="select1" class="au-label"><br />Unit type</label>
+                          <select id="select1" class="au-select">
+                            <option value="">millimeters</option>
+                            <option value="1">centimetres</option>
+                            <option value="1">metres</option>
+                            <option value="2">inches</option>
+                            <option value="3">feet</option>
+                          </select>
+                      </div>
+            </div>
+
+
+            <div class="au-form-group">
+
+							  <div class="au-form-group casa-inline-form-subgroup casa-inline-form-subgroup-lg">
+                        <label class="au-label" for="characteristics">Diameter of the largest aerial shells</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="shells"/>
+                      </div>
+
+
+                        <div class="au-form-group casa-inline-form-subgroup">
+
+                          <label for="select1" class="au-label">Unit type</label>
+                          <select id="select1" class="au-select">
+                            <option value="">millimeters</option>
+                            <option value="1">centimetres</option>
+                            <option value="1">metres</option>
+                            <option value="2">inches</option>
+                            <option value="3">feet</option>
+                          </select>
+                      </div>
+            </div>
+            <div class="au-form-group">
+
+
+
+
+								 <div class="au-form-group casa-inline-form-subgroup casa-inline-form-subgroup-lg">
+                        <label class="au-label" for="characteristics">Burst height</label>
                         <input type="text" class="au-text-input au-text-input--block" id="burst-height"/>
-          	</div>
-					
-													<div class="au-form-group">
-                        <label class="au-label" for="characteristics">Burst radius in feet or metres</label>
+                      </div>
+
+
+                        <div class="au-form-group casa-inline-form-subgroup">
+
+                          <label for="select1" class="au-label">Unit type</label>
+                          <select id="select1" class="au-select">
+                            <option value="">millimeters</option>
+                            <option value="1">centimetres</option>
+                            <option value="1">metres</option>
+                            <option value="2">inches</option>
+                            <option value="3">feet</option>
+                          </select>
+                      </div>
+            </div>
+
+            <div class="au-form-group">
+								 <div class="au-form-group casa-inline-form-subgroup casa-inline-form-subgroup-lg">
+                        <label class="au-label" for="characteristics">Burst radius</label>
                         <input type="text" class="au-text-input au-text-input--block" id="burst-radius"/>
-          	</div>
-					
-																	<div class="au-form-group">
-                        <label class="au-label" for="characteristics">Maximum height in feet or metres above surrounding terrain of any
+                      </div>
+
+
+                        <div class="au-form-group casa-inline-form-subgroup">
+
+                          <label for="select1" class="au-label">Unit type</label>
+                          <select id="select1" class="au-select">
+                            <option value="">millimeters</option>
+                            <option value="1">centimetres</option>
+                            <option value="1">metres</option>
+                            <option value="2">inches</option>
+                            <option value="3">feet</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="au-form-group">
+								 <div class="au-form-group casa-inline-form-subgroup casa-inline-form-subgroup-lg">
+                        <label class="au-label" for="characteristics">Maximum height above surrounding terrain of any
 firework</label>
                         <input type="text" class="au-text-input au-text-input--block" id="terrain"/>
-          	</div>
-					
-
-					
+                      </div>
 
 
-					  
+                        <div class="au-form-group casa-inline-form-subgroup">
+
+                          <label for="select1" class="au-label"><br />Unit type</label>
+                          <select id="select1" class="au-select">
+                            <option value="">millimeters</option>
+                            <option value="1">centimetres</option>
+                            <option value="1">metres</option>
+                            <option value="2">inches</option>
+                            <option value="3">feet</option>
+                          </select>
+                      </div>
 
 
-				   
+      <!--  <div style="clear:both;">.</div> -->
+
+</div>
+
+
+
 				<div class="au-form-group">
 
 				<a class="au-btn" href="firework-notification-summary.html">Next</a>
-					
 
 
 
 
-					
+
+
 
 				</div>
 				               <hr />
             <a href="arn-saved.html" class="au-btn au-btn--secondary">
             Save and exit application
-            </a>  
-				   
+            </a>
+
             </div>
 			 </div>
 			 </div>
@@ -138,7 +217,7 @@ firework</label>
 
 
           <div class="footer">
-           
+
             <div class="footer-wrapper">
                <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
             </div>
@@ -151,8 +230,8 @@ firework</label>
         }
     });
 
-                  
-                  
-		  </script>	 
+
+
+		  </script>
    </body>
 </html>
