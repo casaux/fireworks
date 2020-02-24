@@ -196,8 +196,15 @@ firework</label>
                       <p><strong>Maximum height above surrounding terrain of any
 firework</strong></p>
 
-                      <p>Calculated maximum height of this display above any surrounding terrain (launch point + blast radius + blast height):</p>
+                    <div id="calc-done" style="display:none;">
+                      <p>Calculated maximum height of this display above any surrounding terrain (launch point + burst radius + burst height):</p>
                       <h4>45 metres (147.63 feet)</h4>
+
+                    </div>
+
+
+
+                    <p id="pre-calc">This will be calculated once you have entered the height of the launch point, burst radius and burst height.</p>
 
 
                   </div>
@@ -242,10 +249,9 @@ firework</strong></p>
          </div>
       </main>
 	   		  <script>
-		  $("input[name=checkbox-ex]").on("click", function () {
-        if ($(this).val() === "aerials") {
-            $(".aerials-info").removeClass("casa-hidden");
-        }
+		  $("#burst-radius").on("input", function () {
+            $("#pre-calc").css("display","none");
+              $("#calc-done").css("display","block");
     });
 
 
